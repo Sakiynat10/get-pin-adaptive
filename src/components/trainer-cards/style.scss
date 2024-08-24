@@ -1,0 +1,17 @@
+.trainer-filters-adv{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h2{
+    color: #131313;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.trainer-cards{
+  margin-top: 10px;
+  display:flex ;
+  flex-direction: column;
+  gap: 10px;
+}

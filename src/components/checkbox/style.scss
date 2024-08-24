@@ -1,0 +1,46 @@
+// styles/global.scss
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: var(--Corner-Rad-2, 8px);
+  background: #FFF;
+  padding: 4px 7px;
+
+  input {
+    display: none;
+  }
+
+  .slider {
+    position: relative;
+    width: 25px;
+    height: 15px;
+    background-color:  #4caf50;
+    border-radius: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      left: 10.5px;
+      bottom: 11%;
+      background-color: white;
+      border-radius: 50%;
+      transition: transform 0.2s;
+    }
+  }
+
+  input:checked + .slider {
+    background-color:  #ccc;
+
+    &:before {
+      transform: translateX(-9px);
+    }
+  }
+}

@@ -1,0 +1,34 @@
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px 0px rgb(241, 241, 241);
+  z-index: 200;
+  background: #fff;
+  .nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{
+      color: #131313;
+      font-family: Righteous;
+      font-size: 40px;
+      font-weight: 400;
+      letter-spacing: -0.8px;
+    }
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 38px;
+      width: 170px;
+      border-radius: 10px;
+      background: #FFEC41;
+    }
+  }
+}
