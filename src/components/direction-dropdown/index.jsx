@@ -11,7 +11,7 @@ const DirectionDropdown = () => {
     }
     const closeDrop = (e) => {
         e.preventDefault();
-        e.stopPropagation()
+        e.stopPropagation();
         setDrop(false);
     }
 
