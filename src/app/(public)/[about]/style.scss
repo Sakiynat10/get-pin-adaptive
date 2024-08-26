@@ -57,6 +57,7 @@
 
 #trainers-info{
   padding-top: 90px;
+  padding-bottom: 55px;
   background: #fff;
   .trainer-time{
     display: flex;
@@ -155,6 +156,7 @@
       line-height: 23px; /* 127.778% */
     }
     .desc-title{
+      margin-bottom: 30px;
       p{
         display: inline;
         span{
@@ -162,6 +164,25 @@
         }
       }
     }
+    ul{
+      margin-bottom: 24px;
+      li{
+        display: flex;
+        margin-top: 5px;
+      }
+    }
+    .speaker-description{
+      margin-bottom: 24px;
+    }
+  }
+  .awards-title{
+    margin-bottom: 24px;
+  }
+  .sign-title{
+    margin-bottom: 24px;
+  }
+  .attend-title{
+    margin-bottom: 24px;
   }
   .viewers{
     display: flex;
