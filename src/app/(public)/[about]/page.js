@@ -62,34 +62,34 @@ export default function About() {
                     <ul className="desc-subtitles">
                         <li>
                             <span>-</span>
-                            <div className="subtitle-img">
+                            <span className="subtitle-img">
                                 🖌️
-                            </div>
-                            <p>
+                            </span>
+                            <span>
                                 {" "}
                                 **[Навык 1]** или знание, которое получат участники
-                            </p>
+                            </span>
                         </li>
                         <li>
                             <span>-</span>
-                            <div className="subtitle-img">
+                            <span className="subtitle-img">
 
                                 🖌️
-                            </div>
-                            <p>
+                            </span>
+                            <span>
                                 {" "}
                                 **[Навык 2]** или знание, которое получат участники
-                            </p>
+                            </span>
                         </li>
                         <li>
                             <span>-</span>
-                            <div className="subtitle-img">
+                            <span className="subtitle-img">
                                 🖌️
-                            </div>
-                            <p>
+                            </span>
+                            <span>
                                 {" "}
                                 **[Навык 3]** или знание, которое получат участники
-                            </p>
+                            </span>
                         </li>
                     </ul>
                     <p className="speaker-description">Наш опытный инструктор <span>Khumora Alimova</span> поделится с
@@ -102,31 +102,31 @@ export default function About() {
                     <ul className="awards-infos">
                         <li>
                             <span>-</span>
-                            <div className="awards-img">
+                            <span className="awards-img">
                                 📚
-                            </div>
-                            <p> Интерактивные лекции и практические занятия</p>
+                            </span>
+                            <span> Интерактивные лекции и практические занятия</span>
                         </li>
                         <li>
                             <span>-</span>
-                            <div className="awards-img">
+                            <span className="awards-img">
                                 🏅
-                            </div>
-                            <p> Индивидуальный подход и персональные рекомендации</p>
+                            </span>
+                            <span> Индивидуальный подход и персональные рекомендации</span>
                         </li>
                         <li>
                             <span>-</span>
-                            <div className="awards-img">
+                            <span className="awards-img">
                                 💬
-                            </div>
-                            <p> Обсуждение работ участников и разбор ошибок</p>
+                            </span>
+                            <span> Обсуждение работ участников и разбор ошибок</span>
                         </li>
                         <li>
                             <span>-</span>
-                            <div className="awards-img">
+                            <span className="awards-img">
                                 <Image fill src={"/medal.png"} alt="bool"/>
-                            </div>
-                            <p> Сертификат о прохождении мастер-класса</p>
+                            </span>
+                            <span> Сертификат о прохождении мастер-класса</span>
                         </li>
                     </ul>
                     <p className="sign-title">
@@ -136,22 +136,22 @@ export default function About() {
                         <span className="sign-img">
                             📝
                         </span>
-                        <p style={{display:"inline"}}>Количество мест ограничено, поэтому поспешите записаться! Для регистрации заполните форму на
-                            нашем сайте или позвоните по телефону +998 90 000-00-00.</p>
+                        <span style={{display:"inline"}}>Количество мест ограничено, поэтому поспешите записаться! Для регистрации заполните форму на
+                            нашем сайте или позвоните по телефону +998 90 000-00-00.</span>
                     </div>
                     <p className="attend-title">О стоимости участия:</p>
                     <ul className="attend-desc">
                         <li>
-                            <div className="attend-img">
+                            <span className="attend-img">
                                 💸
-                            </div>
-                            <p>Раннее бронирование до 20-Имюля: [50 000] </p>
+                            </span>
+                            <span>Раннее бронирование до 20-Имюля: [50 000] </span>
                         </li>
                         <li>
-                            <div className="attend-img">
+                            <span className="attend-img">
                                 💸
-                            </div>
-                            <p>Стандартная цена: [70 000]</p>
+                            </span>
+                            <span>Стандартная цена: [70 000]</span>
                         </li>
                     </ul>
                     <div className="star-final">

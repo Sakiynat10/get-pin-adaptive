@@ -55,7 +55,7 @@
     .regions{
       display: none;
       position: absolute;
-      left: 140px;
+      left: 160px;
       width: 180px;
       background: #fff;
       box-shadow: 0 10px 10px 1px rgba(0, 0, 0 , 0.12);
@@ -76,9 +76,12 @@
         color: rgba(56, 185, 139, 1);
       }
     }
-    .active-region{
-      display: flex;
-      flex-direction: column;
+
+    &:hover{
+      .active-region{
+        display: flex;
+        flex-direction: column;
+      }
     }
 
   }
@@ -89,6 +92,7 @@
       content: url("/select-right-active.svg");
     }
   }
+
 }
 
 .hidden-options{

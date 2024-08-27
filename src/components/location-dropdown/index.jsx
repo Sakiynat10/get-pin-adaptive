@@ -27,9 +27,9 @@ const LocationDropDown = () => {
                         <span className={value === city ? "regions active-region" : "regions"}>{regions.map((region , i) => (
                             <span onClick={() => handleRegionValue(region, regionValue === region ?  "activeRegion"  :"" )} className={regionValue === region ?  "activeRegion"  :""} key={i}>{region || "Toshkent"}</span>
                         ))}</span>
-                       </span>
+                    </span>
                 ))}
-                </span>
+            </span>
 
         </>
     )
