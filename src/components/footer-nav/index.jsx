@@ -14,7 +14,7 @@ const FooterNav = () => {
             <a href="/">
                 <img src="/heart.svg" alt="heart"/>
             </a>
-            <a href="/">
+            <a href="/adding-adv">
                 <img src="/user.svg" alt="user"/>
             </a>
         </nav>
