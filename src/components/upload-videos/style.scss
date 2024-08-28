@@ -2,7 +2,7 @@
 
 .swiper{
   position:relative !important;
-  width:335px !important;
+  width:100% !important;
   margin-left:0;
   border: 1px solid #e2e8f0;
   z-index:5 !important;
@@ -51,7 +51,6 @@
 
 .swiper-pagination{
   margin-bottom:10px;
-  max-width:400px !important;
   width: 100% !important;
   display: flex !important;
   justify-content:center;
@@ -65,13 +64,11 @@
 }
 
 .media-content{
-  max-width:375px !important;
   width: 100%;
 }
 
 
 .mediaWrapper {
-  max-width: 375px !important;
   width:100%;
   height: 10rem;
   display: flex;
