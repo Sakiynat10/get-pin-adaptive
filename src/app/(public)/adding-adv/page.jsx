@@ -69,77 +69,68 @@ const AddingAdvertisement = () => {
                             </select>
                         </div>
                         <MediaUpload/>
-                        {/*<div className="data-group">*/}
-                        {/*    <div className="address-input">*/}
-                        {/*        <input type="text" placeholder="Адресс"/>*/}
-                        {/*    </div>*/}
-                        {/*    <div className="place-input">*/}
-                        {/*        <input type="text" placeholder="Месть"/>*/}
-                        {/*    </div>*/}
-                        {/*    <div className="data-input">*/}
-                        {/*        <input type={type1} placeholder="Дата" onFocus={handleFocus1}/>*/}
-                        {/*    </div>*/}
-                        {/*    <div className="time-input">*/}
-                        {/*        <input*/}
-                        {/*            type={type}*/}
-                        {/*            placeholder="Во сколько"*/}
-                        {/*            step="900"*/}
-                        {/*            onFocus={handleFocus}*/}
-                        {/*        />*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-                        {/*<div className="price-input">*/}
-                        {/*    <h3>Стоимость</h3>*/}
-                        {/*    <input type="number" placeholder="Narxi (uzs)"/>*/}
-                        {/*</div>*/}
+                        <div className="data-group">
+                            <div className="address-input">
+                                <input type="text" placeholder="Адресс"/>
+                            </div>
+                            <div className="place-input">
+                                <input type="text" placeholder="Месть"/>
+                            </div>
+                            <div className="data-input">
+                                <input type={type1} placeholder="Дата" onFocus={handleFocus1}/>
+                            </div>
+                            <div className="time-input">
+                                <input
+                                    type={type}
+                                    placeholder="Во сколько"
+                                    step="900"
+                                    onFocus={handleFocus}
+                                />
+                            </div>
+                        </div>
+                        <div className="price-input">
+                            <h3>Стоимость</h3>
+                            <input type="number" className={"price"} placeholder="Narxi (uzs)"/>
+                        </div>
                         <h3>Спикеры</h3>
-                        {/*<div className="account-group">*/}
-                        {/*    {files.map((el, i) =>*/}
-                        {/*        <>*/}
-                        {/*            <div key={i} className={"container-img"}>*/}
-                        {/*                <div className="photo-card">*/}
-                        {/*                    <div className={"photoArea"}>*/}
-                        {/*                        {el.data ? (*/}
-                        {/*                            <img src={el?.data} alt="Speaker" className={"photo"}/>*/}
-                        {/*                        ) : (*/}
-                        {/*                            <span className={"placeholder"}>Фото спикера</span>*/}
-                        {/*                        )}*/}
-                        {/*                    </div>*/}
-                        {/*                </div>*/}
-                        {/*                <label className={"uploadButton"}>*/}
-                        {/*                    <input*/}
-                        {/*                        type="file"*/}
-                        {/*                        accept="image/*"*/}
-                        {/*                        onChange={(e) => handleFileChange(e, el.id)}*/}
-                        {/*                        className={"hiddenInput"}*/}
-                        {/*                        id="rasm"/>*/}
-                        {/*                    <label htmlFor="rasm" onChange={(e) => handleFileChange(e, el.id)}*/}
-                        {/*                           className={"buttonText"}>Добавить еще</label>*/}
-                        {/*                </label>*/}
-                        {/*            </div>*/}
-                        {/*            <div className={"add-account-profile"}>*/}
-                        {/*                <input type="text" placeholder={"Имя спикера"}/>*/}
-                        {/*                <input type="text" placeholder={"Фамилия"}/>*/}
-                        {/*                <input type="text" placeholder={"Компания"}/>*/}
-                        {/*                <input type="text" placeholder={"Должность"}/>*/}
-                        {/*            </div>*/}
-                        {/*        </>*/}
-                        {/*    )}*/}
+                        <div className="account-group">
+                            {files.map((el, i) =>
+                                <>
+                                    <div key={i} className={"container-img"}>
+                                        <div className="photo-card">
+                                            <div className={"photoArea"}>
+                                                {el.data ? (
+                                                    <img src={el?.data} alt="Speaker" className={"photo"}/>
+                                                ) : (
+                                                    <span className={"placeholder"}>Фото спикера</span>
+                                                )}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={"add-account-profile"}>
+                                        <input type="text" placeholder={"Имя спикера"}/>
+                                        <input type="text" placeholder={"Фамилия"}/>
+                                        <input type="text" placeholder={"Компания"}/>
+                                        <input type="text" placeholder={"Должность"}/>
+                                    </div>
+                                    <label className={"uploadButton"}>
+                                        <input
+                                            type="file"
+                                            accept="image/*"
+                                            onChange={(e) => handleFileChange(e, el.id)}
+                                            className={"hiddenInput"}
+                                            id="rasm"/>
+                                        <label htmlFor="rasm" onChange={(e) => handleFileChange(e, el.id)}
+                                               className={"buttonText"}>Добавить еще</label>
+                                    </label>
+                                </>
+                            )}
 
-                        {/*</div>*/}
-                        {/*<div className="context-groups">*/}
-                        {/*    <div className={"context-group"}>*/}
-                        {/*        <h1>Контекст</h1>*/}
-                        {/*        <textarea aria-placeholder={"none"} aria-controls={"none"}  placeholder={"Подробнее описание"}></textarea>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-                        {/*<form className={"admit"}>*/}
-                        {/*    <label htmlFor="admit">*/}
-                        {/*        <input id={"admit"} type="checkbox"/>*/}
-                        {/*        <p>Я подтверждаю, что ознакомился и согласен с <span>Условиями использования</span>  данного сервиса.</p>*/}
-                        {/*    </label>*/}
-                        {/*    <button>Отправить модерацию</button>*/}
-                        {/*</form>*/}
+                        </div>
+                        <div className={"context-group"}>
+                            <h1>Контекст</h1>
+                            <textarea aria-placeholder={"none"} aria-controls={"none"} placeholder={"Подробнее описание"}></textarea>
+                        </div>
                     </div>
                 </div>
             </div>

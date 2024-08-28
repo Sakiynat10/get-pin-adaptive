@@ -92,7 +92,7 @@ header{
             }
           }
           &::before{
-            content:url("/down-arrow.svg");
+            content:url("/down-arrow-m.svg");
             position:absolute;
             width:20px;
             height:20px;
@@ -102,7 +102,7 @@ header{
             z-index: 1;
           }
           &::after{
-            content:url("/down-arrow.svg");
+            content:url("/down-arrow-m.svg");
             position:absolute;
             width:20px;
             height:20px;
@@ -155,7 +155,7 @@ header{
         //}
         .data-group{
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr;
           gap:5px;
           position:relative;
           input{
@@ -190,7 +190,7 @@ header{
             appearance: none;
             overflow:hidden;
             &::before{
-              content:url("/calendar.svg");
+              content:url("/calendar-m.svg");
               position: absolute;
               right:20px;
               cursor:pointer;
@@ -200,26 +200,27 @@ header{
           .address-input{
             appearance: none;
             &::before{
-              content:url("/send.svg");
+              content:url("/send-m.svg");
               position:absolute;
             }
           }
           .place-input{
             &::before{
-              content:url("/place-group.svg");
+              content:url("/place-group-m.svg");
               position:absolute;
             }
           }
           .time-input{
             &::before{
-              content:url("/send.svg");
+              content:url("/send-m.svg");
               position:absolute;
+              margin-right: -3px;
             }
           }
           .time-input{
             &::before{
               display:inline-block;
-              content:url("/clock-round.svg");
+              content:url("/clock-round-m.svg");
               position:absolute;
               width:20px;
               height:20px;
@@ -228,7 +229,7 @@ header{
           .price-input{
             &::before{
               display:inline-block;
-              content:url("/price.svg");
+              content:url("/price-m.svg");
               position:absolute;
               width:20px;
               height:20px;
@@ -251,26 +252,34 @@ header{
         .price-input {
           margin-top: 40px;
           margin-bottom: 25px;
-          input{
+          position: relative;
+          .price{
             width:100%;
             height:54px;
             padding:14px 20px;
             outline: none;
             overflow: hidden;
-            font-size: 22px;
+            text-overflow: ellipsis;
+            font-size: 15px;
+            font-style: normal;
             font-weight: 400;
-            cursor: pointer;
+            color: #121212;
+            line-height: normal;
             border-radius: 5px;
             border: 1px solid #E3E4E8;
             background: #FFF;
-            position: relative;
-            &::before{
-              display:inline-block;
-              content:url("/price.svg");
-              position:absolute;
-              width:20px;
-              height:20px;
+            &::placeholder{
+              color: #121212;
             }
+          }
+          &::after{
+            display:block;
+            content:url("/price-m.svg");
+            position: absolute;
+            height:16px;
+            width: 16px;
+            top: 66px;
+            right: 20px;
           }
           input[type="number"]::-webkit-outer-spin-button,
           input[type="number"]::-webkit-inner-spin-button {
@@ -281,11 +290,12 @@ header{
         }
         .account-group{
           display:grid;
-          grid-template-columns:1fr 1fr;
+          grid-template-columns:1fr;
           gap: 8px;
           .photo-card{
             height:260px;
-            width: 260px;
+            max-width: 400px;
+            width: 100%;
             margin-bottom:5px;
             border:1px solid  #E3E4E8;
             display: flex;
@@ -319,8 +329,11 @@ header{
           }
 
           .uploadButton {
+            max-width: 400px;
+            width: 100%;
             display: flex;
             align-items: center;
+            text-align: center;
             justify-content: center;
             padding: 14px;
             border: 1px solid  #E3E4E8;
@@ -337,8 +350,11 @@ header{
 
           .buttonText {
             cursor: pointer;
-            display: inline-flex;
+            display: flex;
+            text-align: center;
             align-items: center;
+            margin-left: auto;
+            margin-right: auto;
             text-overflow: ellipsis;
             font-weight: 400;
             overflow: hidden;
@@ -349,9 +365,8 @@ header{
           }
 
           .buttonText::before {
-            content: url("/clock-round.svg");
+            content: url("/clock-round-m.svg");
             margin-right: 0.5rem;
-            margin-top:5px;
             font-size: 10px;
           }
         }
@@ -360,7 +375,8 @@ header{
           flex-direction: column;
           gap: 5px;
           input{
-            width: 260px;
+            max-width: 400px;
+            width: 100%;
             height: 54px;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -376,8 +392,7 @@ header{
             }
           }
         }
-        .context-groups{
-          div{
+        .context-group{
             margin-bottom: 40px;
             h1{
               overflow: hidden;
@@ -391,8 +406,9 @@ header{
               border: 1px solid #E3E4E8;
               outline: none;
               resize: none;
-              width: 526px;
-              height: 252px;
+              max-width: 526px;
+              width: 100%;
+              height: 118px;
               padding: 14px 20px;
               text-overflow: ellipsis;
               font-size: 15px;
@@ -410,9 +426,9 @@ header{
                 font-weight: 400;
                 line-height: normal;
               }
-            }
           }
         }
+
         .admit{
           display: flex;
           flex-direction: column;
