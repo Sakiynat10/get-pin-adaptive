@@ -11,7 +11,7 @@ const FooterNav = () => {
             <a href="/" className={"plus"}>
                 <img src="/plus.svg" alt="plus"/>
             </a>
-            <a href="/">
+            <a href="/profile/poster">
                 <img src="/heart.svg" alt="heart"/>
             </a>
             <a href="/adding-adv">

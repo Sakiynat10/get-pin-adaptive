@@ -2,7 +2,7 @@ import "./style.scss"
 
 const footer = () => {
     return (
-        <footer className={"container"}>
+        <footer>
             <div className="footer-logo">
                 <a href="/">Getpin</a>
                 <span>Собирайся, учись, развивайся – всё в одном месте!</span>
