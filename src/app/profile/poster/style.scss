@@ -3,8 +3,6 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     .poster-content{
-      padding-left: 10px;
-      padding-right: 10px;
       .main-content{
         max-width: 500px;
         width: 100%;

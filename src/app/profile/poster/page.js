@@ -7,7 +7,6 @@ const PosterPage = () => {
     return(
         <div className={"poster"}>
             <div className={"poster-content"}>
-                <StatisticContent/>
                 <div className={"main-content"}>
                     {/*<div className={"tab-content"}>*/}
                     {/*    <ul className={"main-content-tab"}>*/}
