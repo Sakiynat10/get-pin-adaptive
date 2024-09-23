@@ -22,16 +22,13 @@ main{
         }
         .main-content-tab{
           display: flex;
-         /* Prevents wrapping of list items */
-          //padding: 0;
-          //margin: 0;
-          //list-style: none;
-          //display: flex;
-          //overflow: scroll;
           gap: 3px;
-          width: 100%;
+          overflow-x: scroll;
+          scrollbar-width: none;
+          width: 96vw;
           height: 48px;
           padding: 3px;
+          //margin: 0 10px 8px 10px;
           border-radius: 12px;
           background: #FFF;
           margin-bottom: 8px;

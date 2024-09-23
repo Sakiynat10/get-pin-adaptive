@@ -11,20 +11,20 @@ const RecordsPage = () => {
         <div className={"records"}>
             <div className={"records-content"}>
                 <div className={"main-content"}>
-                    {/*<ul className={"main-content-tab"}>*/}
-                    {/*    <li>*/}
-                    {/*        Все*/}
-                    {/*    </li>*/}
-                    {/*    <li>*/}
-                    {/*        Не принятые*/}
-                    {/*    </li>*/}
-                    {/*    <li>*/}
-                    {/*        Принятые*/}
-                    {/*    </li>*/}
-                    {/*    <li>*/}
-                    {/*        Отклоненные*/}
-                    {/*    </li>*/}
-                    {/*</ul>*/}
+                    <ul className={"main-content-tab"}>
+                        <li>
+                            Все
+                        </li>
+                        <li>
+                            Непринятые
+                        </li>
+                        <li>
+                            Принятые
+                        </li>
+                        <li>
+                            Отклоненные
+                        </li>
+                    </ul>
                     <div className={"main-content-context"}>
                     </div>
                 </div>

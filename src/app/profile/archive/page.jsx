@@ -34,18 +34,14 @@ const ArchivePage = () => {
     return(
         <div className={"archive"}>
             <div className={"archive-main"}>
-                {/*<div className={"archive-tabs"}>*/}
-                {/*    <ul>*/}
-                {/*        <li>*/}
-                {/*            <button>*/}
-                {/*                <img src="/left-archive.svg" alt="right"/>*/}
-                {/*                Непринятые*/}
-                {/*            </button>*/}
-                {/*        </li>*/}
-                {/*        <li>То что вам удобна это —<span>ux-дизайн</span></li>*/}
-                {/*    </ul>*/}
-                {/*    <h3>46/90</h3>*/}
-                {/*</div>*/}
+                    <button className={"archive-btn"}>
+                        <img src="/chevron-left.svg" alt="right"/>
+                        Непринятые
+                    </button>
+                <div className={"archive-tabs"}>
+                        <p>То что вам удобна это —<span>ux-дизайн</span></p>
+                    <h3>46/90</h3>
+                </div>
                 <div className={"archive-cards"}>
                     {[...Array(10)].map((_, i) => (
                             <div key={i} className={"archive-card"}>
@@ -69,7 +65,8 @@ const ArchivePage = () => {
                                         <img src="/three-dots.svg" alt="edit"/>
                                     </button>
                                 </div>
-                                <div  ref={el => (buttonRefs.current[i] = el)} className={mode === i ? "active-mode" : "hide-mode"}>
+                                <div ref={el => (buttonRefs.current[i] = el)}
+                                     className={mode === i ? "active-mode" : "hide-mode"}>
                                     <button onClick={hideMode}>Отменить</button>
                                     <button onClick={hideMode}>Инфо</button>
                                 </div>

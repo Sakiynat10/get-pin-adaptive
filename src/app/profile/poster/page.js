@@ -9,20 +9,20 @@ const PosterPage = () => {
             <div className={"poster-content"}>
                 <div className={"main-content"}>
                     {/*<div className={"tab-content"}>*/}
-                    {/*    <ul className={"main-content-tab"}>*/}
-                    {/*        <li>*/}
-                    {/*            Все*/}
-                    {/*        </li>*/}
-                    {/*        <li>*/}
-                    {/*            Актуалные*/}
-                    {/*        </li>*/}
-                    {/*        <li>*/}
-                    {/*            Отклоненные*/}
-                    {/*        </li>*/}
-                    {/*        <li>*/}
-                    {/*            Черновые*/}
-                    {/*        </li>*/}
-                    {/*    </ul>*/}
+                        <ul className={"main-content-tab"}>
+                            <li>
+                                Все
+                            </li>
+                            <li>
+                                Актуалные
+                            </li>
+                            <li>
+                                Отклоненные
+                            </li>
+                            <li>
+                                Черновые
+                            </li>
+                        </ul>
                     {/*</div>*/}
                     <div className={"main-content-context"}>
                         <TrainCards  statistic="statistic" />

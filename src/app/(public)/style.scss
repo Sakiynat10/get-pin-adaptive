@@ -76,6 +76,9 @@
   .trainer-dates {
     display: grid;
     gap: 10px; /* Optional: adds space between the items */
+    li{
+      height: 56px;
+    }
     li:nth-child(2){
       .ant-picker{
         display: flex;
@@ -159,11 +162,15 @@
   }
 
   .trainer-dates li:first-child {
+    display: flex;
     grid-column: span 2;
     width: 100%;
     border-radius: 12px;
     border: 1px solid #F1F1F1;
     background: #FFF;
+    span{
+      top: 50px;
+    }
   }
 
   .trainer-dates li:nth-child(n+2) {

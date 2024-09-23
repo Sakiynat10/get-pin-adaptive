@@ -17,19 +17,27 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    overflow: scroll;
     .card-outline{
       border-radius: 12px;
     }
     .main-content-tab{
       display: flex;
       gap: 3px;
-      width: 485px;
+      width: 96vw;
+      overflow-x: scroll;
+      scrollbar-width: none;
       height: 48px;
       padding: 3px;
       border-radius: 12px;
       background: #FFF;
-      margin-bottom: 8px;
+      //&::-webkit-scrollbar-track {
+      //  background: red; /* Track color */
+      //}
+      //&::-webkit-scrollbar-thumb {
+      //  background-color: green; /* Scrollbar color */
+      //  border-radius: 10px; /* Rounded scrollbar */
+      //  border: 2px solid #f1f1f1; /* Space around scrollbar */
+      //}
       li{
         cursor: pointer;
         display: flex;

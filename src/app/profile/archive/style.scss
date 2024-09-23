@@ -2,48 +2,37 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-left: 10px;
-  padding-right: 10px;
   .archive-main{
     padding-bottom: 30px;
     max-width: 480px;
     width: 100%;
-    .archive-tabs{
+    .archive-btn{
       display: flex;
       align-items: center;
+      justify-content: center;
+      width: 133px;
+      height: 42px;
+      gap: 3px;
+      border-radius: 10px;
+      background: #FFF;
+      border: none;
+      margin-bottom: 16px;
+      img{
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .archive-tabs{
+      display: flex;
       justify-content: space-between;
       padding: 3px 13px 3px 3px;
-      background: #fff;
       border-radius: 12px;
-      ul{
-        display: flex;
-        align-items: center;
-        gap: 7px;
-        li{
-          color: #282828;
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 16px; /* 114.286% */
-          button{
-            display: flex;
-            align-items: center;
-            padding: 13px 21px 13px 13px;
-            color: #282828;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 16px; /* 114.286% */
-            border: none;
-            border-radius: 10px;
-            outline: none;
-            background: #F6F6F6;
-            cursor: pointer;
-            transition: 0.5s;
-            &:hover{
-              background: rgba(246, 246, 246, 0.5);
-              transition: 0.5s;
-            }
-          }
-        }
+      margin-bottom: 40px;
+      p{
+        max-width: 227px;
+        color: #282828;
+        font-size: 18px;
+        font-weight: 500;
       }
       h3{
         color: #131313;
@@ -53,7 +42,6 @@
       }
     }
     .archive-cards{
-      margin-top: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
