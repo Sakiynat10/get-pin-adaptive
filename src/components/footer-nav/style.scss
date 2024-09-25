@@ -1,12 +1,16 @@
 .footer-nav{
   position: fixed;
+
   bottom: 0;
+  max-width: 500px;
   width: 100%;
   height: 60px;
   background: #A9FFE0;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 201;
   .plus{
     display: flex;

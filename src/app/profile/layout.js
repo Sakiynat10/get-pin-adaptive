@@ -16,6 +16,8 @@ export default function RootLayout({ children }) {
                 <StatisticContent/>
                 <main>{children}</main>
                 <Footer/>
+            </div>
+            <div style={{display:"flex" , justifyContent:"center" ,maxWidth:"500px", width:"100%", marginLeft:"auto" , marginRight:"auto"}}>
                 <FooterNav/>
             </div>
         </Fragment>
