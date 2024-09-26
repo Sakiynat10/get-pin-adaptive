@@ -1,21 +1,7 @@
-.input-error {
-  border-color: #ff4d4f;
-}
-
-.hide-login {
+.hide{
   display: none !important;
 }
-
-.error-message {
-  color: #ff4d4f;
-  font-size: 12px;
-}
-
-.login-title{
-  margin-top: 23px;
-}
-
-.login-content{
+.confirm-content{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,22 +14,42 @@
   z-index: 250;
 }
 
-.login-group{
+.confirm-group{
   max-width: 335px;
   width: 100%;
-  height: 544px;
-  padding: 52px 20px;
+  height: 532px;
+  padding: 60px 23px;
   display: block;
   align-items: start;
   background: #fff;
   border-radius: 6px;
+  div{
+    input{
+      border-radius: 7px;
+      border: 1px solid #E3E4E8;
+      background: #FFF;
+      margin: 0 15px 0 0 !important;
+      height: 54px;
+      width: 44px;
+    }
+  }
   h3{
     color: #282828;
     font-size: 22px;
     font-weight: 500;
-    margin-bottom: 44px;
+    margin-bottom: 24px;
   }
-  .login-check-content{
+  p{
+    color: #282828;
+    font-size: 13px;
+    font-weight: 500;
+    width: 283px;
+    margin-bottom: 24px;
+    span{
+      background: #A9FFE0;
+    }
+  }
+  .confirm-check-content{
     margin-bottom: 22px;
     h4{
       color: #282828;
@@ -51,7 +57,7 @@
       font-weight: 500;
       margin-bottom: 12px;
     }
-    .login-check-type{
+    .confirm-check-type{
       display: flex;
       max-width: 440px;
       width: 100%;
@@ -86,7 +92,6 @@
   }
   label{
     margin-bottom: 12px;
-
     span{
       display: inline-block;
       color: #282828;
@@ -95,8 +100,7 @@
       margin-bottom: 10px;
     }
     input{
-
-      margin-bottom: 5px;
+      margin-bottom: 23px;
       max-width: 440px;
       width: 100%;
       height: 54px;
@@ -122,17 +126,34 @@
     font-weight: 500;
     cursor: pointer;
     margin-bottom: 46px;
+    margin-top: 50px;
   }
-  .forget-password{
-    margin-top: 13px;
+  .input-groups{
     display: flex;
-    color: #0090FF;
-    font-size: 15px;
+    gap: 14px;
+    input{
+      width: 44px;
+      height: 54px;
+      border-radius: 7px;
+      border: 1px solid #E3E4E8;
+      background: #FFF;
+      display: flex;
+      padding: 18px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .send-password{
+    color: #282828;
+    font-size: 13px;
+    font-style: normal;
     font-weight: 500;
+    line-height: normal;
+    background: none;
     border: none;
-    background: transparent;
-    margin-bottom: 20px;
     cursor: pointer;
+    margin-bottom: 20px;
   }
   .google-confirm{
     display: flex;

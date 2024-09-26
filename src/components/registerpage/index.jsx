@@ -20,6 +20,19 @@ const RegisterPage = () => {
     const router = useRouter();
     const [login, setLogin] = useState(true);
 
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+
+    const handleNameValue = (event) => {
+        console.log(event.currentTarget.value)
+        setName(event.currentTarget.value)
+    }
+
+    const handleEmailValue = (event) => {
+        console.log(event.currentTarget.value)
+        setEmail(event.currentTarget.value)
+    }
+
     const handleChangeType1 = () => {
         setIsChecked(true);
     };
@@ -39,6 +52,13 @@ const RegisterPage = () => {
     const stayRegister = (e) => {
         e.stopPropagation();
     };
+
+    const passPage = () => {
+        if(name !== "" && email !== ""){
+            router.push("/profile/poster")
+        }
+
+    }
 
     /*Loading*/
 
@@ -79,19 +99,23 @@ const RegisterPage = () => {
                         <label htmlFor="nameCompany">
                             <span>Названия компания</span>
                             <Field
+                                onChange={handleNameValue}
                                 id={"nameCompany"}
                                 name="nameCompany"
+                                value={name}
                                 type="text"
                                 placeholder={"LLC Getter"}
                                 className={errors.nameCompany && touched.nameCompany ? "input-error" : ""}
                             />
-                            <ErrorMessage name="nameCompany" component="div" className="error-message" />
+                            {/*<ErrorMessage name="nameCompany" component="div" className="error-message" />*/}
                         </label>
 
                         <label htmlFor="email">
                             <span className={"email-title"}>E-mail для подтвреждения аккаунта</span>
                             <Field
+                                onChange={handleEmailValue}
                                 id={"email"}
+                                value={email}
                                 name="email"
                                 type="email"
                                 placeholder={"e-mail"}
@@ -100,7 +124,7 @@ const RegisterPage = () => {
                             <ErrorMessage name="email" component="div" className="error-message" />
                         </label>
 
-                        <button type="submit" className={"confirm"}>Далее</button>
+                        <button type="submit" onClick={passPage} className={"confirm"}>Далее</button>
 
                         <button className={"google-confirm"}>
                             <img src="/google.svg" alt="img" />

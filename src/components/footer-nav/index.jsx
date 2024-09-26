@@ -4,6 +4,7 @@ import LoginPage from "@/components/loginpage";
 import {Fragment, useState} from "react";
 import {register} from "swiper/element";
 import RegisterPage from "@/components/registerpage";
+import VerificationPage from "@/components/verification";
 const FooterNav = () => {
     const [login, setLogin] = useState(false);
     const [register, setRegister] = useState(false);
@@ -18,6 +19,7 @@ const FooterNav = () => {
             setRegister(!register)
         }
     }
+
     return(
         <Fragment>
             <nav className={"footer-nav"}>
@@ -37,7 +39,7 @@ const FooterNav = () => {
                     <img src="/user.svg" alt="user"/>
                 </a>
                 {register  ? <RegisterPage/>  : <></>}
-                {login  ? <LoginPage/>  : <></>}
+                {login  ? <LoginPage />  : <></>}
             </nav>
             {/*{login  ? <LoginPage/>  : <></>}*/}
         </Fragment>
